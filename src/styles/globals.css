@@ -198,3 +198,9 @@ a {
 hr {
   color: rgb(239, 79, 95);
 }
+
+@media only screen and (max-width: 768px) {
+  .article {
+    flex-direction: column-reverse;
+  }
+}
