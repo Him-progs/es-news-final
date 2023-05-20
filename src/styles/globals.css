@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -83,16 +85,17 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -104,4 +107,94 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.author-name {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 10px;
+  color: #ababab;
+}
+
+.article {
+  padding: 15px;
+}
+
+.article-desc {
+  font-size: 12px;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.nav-cont {
+  justify-content: center !important;
+}
+
+.navbar {
+  position: sticky !important;
+  top: 0;
+  margin-bottom: 20px;
+  z-index: 999;
+}
+
+.trending-cards {
+  margin: 50px 0;
+}
+
+.trending-cards .card {
+  display: inline-block;
+  min-height: 300px;
+  max-height: 300px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.trending-cards .card-img-top {
+  min-height: 150px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.trending-cards .card-title {
+  font-size: 16px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.slick-slider .slick-slide {
+  padding: 15px;
+}
+
+.card-date {
+  color: #ababab;
+  font-size: 12px;
+}
+
+.trending-title {
+  font-size: 22px;
+}
+
+.trending-title svg {
+  color: rgb(239, 79, 95);
+  margin-right: 5px;
+}
+
+.slick-list {
+  padding: 20px 0;
+}
+
+hr {
+  color: rgb(239, 79, 95);
 }
